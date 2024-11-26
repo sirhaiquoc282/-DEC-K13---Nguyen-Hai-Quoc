@@ -63,3 +63,12 @@ awk -F',' 'NR > 1 {print $7}' "$input_file" | sed 's/|/\n/g' | awk 'length($0) >
 # 7. Thống kê số lượng phim theo thể loại
 echo -e "\nThống kê số lượng phim theo thể loại:\n"
 awk 'BEGIN {FS=OFS="\""} {for (i=2; i<=NF; i+=2) gsub(/,/, "#", $i)} 1' "$input_file" | awk -F',' 'NR > 1 {print $14}' | sed 's/|/\n/g' | sort | uniq -c | sort -nr | awk 'length($2) > 0 {print $2, $1}'
+
+
+#Từ những trường dữ liệu của tập dữ liệu tmdb-movies.csv, ta có thể mở rộng thêm một số phân tích sau:
+#1.Thông qua genres và release_date, có thể suy ra được xu hướng ra các thể loại phim theo thời gian, theo mùa
+#2.Thông qua budget, revenue, genres có thể phân tích được sự đầu tư và lợi nhuận từ thể loại phim nào có trung bình lớn hơn
+#3.Thông qua popularity, genres phân tích được thể loại phim nào có độ phổ biến trung bình cao nhất, thể loại nào ít được quan tâm nhất
+#4.Thông qua cast, budget tìm ra được diễn viên nào được tham gia vào các dự án có chi phi đầu tư từ một mốc cụ thể nào đấy trở lên nhiều nhất, ít nhất
+#5.Từ runtime và genres để tìm ra thể loại film nào có trung bình thời lượng dài nhất, ngắn nhất hoặc so sánh với một mốc cụ thể
+#…
