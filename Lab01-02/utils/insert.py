@@ -49,6 +49,9 @@ def insert_products_data(conn, dir):
                             )
                         cur.executemany(insert_products, valid_data)
                         count += 1
+                except (Exception, FileNotFoundError) as err:
+                    log(err, error=True)
+                    print(err)
                 except (Exception, psycopg2.DatabaseError) as err:
                     conn.rollback()
                     log(err, error=True)
