@@ -1,0 +1,46 @@
+2025-03-16 15:50:42 [scrapy.utils.log] INFO: Scrapy 2.11.2 started (bot: glamira)
+2025-03-16 15:50:43 [scrapy.utils.log] INFO: Versions: lxml 5.3.0.0, libxml2 2.11.7, cssselect 1.2.0, parsel 1.9.1, w3lib 2.2.1, Twisted 24.7.0, Python 3.11.8 (tags/v3.11.8:db85d51, Feb  6 2024, 22:03:32) [MSC v.1937 64 bit (AMD64)], pyOpenSSL 24.2.1 (OpenSSL 3.2.1 30 Jan 2024), cryptography 42.0.7, Platform Windows-10-10.0.26100-SP0
+2025-03-16 15:50:43 [scrapy.addons] INFO: Enabled addons:
+[]
+2025-03-16 15:50:43 [scrapy.extensions.telnet] INFO: Telnet Password: bef823fcb0e328f1
+2025-03-16 15:50:43 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2025-03-16 15:50:43 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'glamira',
+ 'CONCURRENT_REQUESTS': 50,
+ 'DOWNLOAD_DELAY': 2,
+ 'HTTPCACHE_ENABLED': True,
+ 'LOG_FILE': 'app.log',
+ 'LOG_LEVEL': 20,
+ 'NEWSPIDER_MODULE': 'glamira_crawler.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'RETRY_HTTP_CODES': [500, 502, 503, 504, 400, 403, 404, 408],
+ 'RETRY_TIMES': 5,
+ 'SPIDER_MODULES': ['glamira_crawler.spiders']}
+2025-03-16 15:50:43 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats',
+ 'scrapy.downloadermiddlewares.httpcache.HttpCacheMiddleware']
+2025-03-16 15:50:43 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2025-03-16 15:50:43 [scrapy.middleware] INFO: Enabled item pipelines:
+['glamira_crawler.pipelines.GlamiraCrawlerPipeline']
+2025-03-16 15:50:43 [scrapy.core.engine] INFO: Spider opened
+2025-03-16 15:50:43 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-03-16 15:50:43 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2025-03-16 15:51:45 [scrapy.crawler] INFO: Received SIGINT, shutting down gracefully. Send again to force 
+2025-03-16 15:51:46 [scrapy.crawler] INFO: Received SIGINT twice, forcing unclean shutdown

@@ -1,0 +1,2 @@
+pymongo==4.11.1
+IP2Location==8.10.4
